@@ -26,13 +26,11 @@ categoryCtrl.deleteCategory = async (req, res) => {
     res.json('category Deleted')
 }
 
-categoryCtrl.updateCategory = async (req, res) => {
+categoryCtrl.updateCategory = (req, res) => {
     const { name, description } = req.body;
-    await Category.findByIdAndUpdate(req.params.id, {
-        name,
-        description
-    });
-    res.json('Category updated');
+    Category.findByIdAndUpdate(req.params.id, {name, description})
+    .then(response=>res.json(response))
+    .catch(e=> res.json(e))
 }
 
 categoryCtrl.getPostOnCategory = async (req, res) => {

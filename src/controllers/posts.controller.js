@@ -40,16 +40,4 @@ postsCtrl.deletePost = async (req, res) => {
     res.json('post Deleted')
 }
 
-postsCtrl.updatePost = async (req, res) => {
-    const { tittle, description, author, img, category } = req.body;
-    await Post.findByIdAndUpdate(req.params.id, {
-        tittle,
-        description,
-        author,
-        img,
-        category
-    });
-    res.json('Category updated');
-}
-
 module.exports = postsCtrl
