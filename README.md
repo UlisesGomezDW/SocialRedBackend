@@ -3,7 +3,7 @@ Servicio de backend para la aplicación Red Social (MERN Stack).
 
 ## Iniciando
 La consulta de la API REST, puede hacerse a través del siguiente dominio:
-[Demo](https://rickandmorty-b02c4.web.app/).
+https://rickandmorty-b02c4.web.app/ + endpoint.
 
 O bien, puedes clonar el proyecto mediante:
 ```bash
@@ -75,7 +75,7 @@ src:.
 - MongoDB
 
 ## Deployment
-La aplicación actualmente está siendo ejecutada bajo el servicio de Heroku y esta disponible en: https://frozen-fjord-18489.herokuapp.com/ + ruta del endpoint
+La aplicación actualmente está siendo ejecutada bajo el servicio de Heroku y esta disponible en: https://frozen-fjord-18489.herokuapp.com/ + endpoint
 
 ## Base de datos
 La base de datos está almacenada y ofrece servicio a través de MongoDB Atlas.
